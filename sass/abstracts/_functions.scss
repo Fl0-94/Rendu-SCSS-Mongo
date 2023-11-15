@@ -1,0 +1,9 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @mixin background-semi-transparent($color, $opacity) {
+    background: rgba($color, $opacity);
+  }

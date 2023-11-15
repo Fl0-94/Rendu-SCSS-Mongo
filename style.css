@@ -1,0 +1,268 @@
+/* This file is used to reset the default styles of HTML elements */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+}
+@media (max-width: 1200px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 0.6rem;
+  }
+}
+body header {
+  min-height: 100vh;
+  background: url("back.png") no-repeat center center;
+  background-size: cover;
+}
+body .header-navigation {
+  display: flex;
+  padding: 47px 0 22px 0;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+body .header-navigation__logo {
+  flex: 1;
+}
+body .header-navigation__logo img {
+  width: 200px;
+}
+body .header-navigation__main-menu {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  flex: 2;
+  justify-content: center;
+}
+body .header-navigation__main-menu a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Popins", sans-serif;
+}
+body .header-navigation .command-button {
+  padding: 0.5rem 2rem;
+  background-color: #FFFFFF !important;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #B2D234 !important;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Popins", sans-serif;
+}
+body .header-navigation .special {
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+body .header-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+body .header-content__image {
+  width: 55%;
+}
+body .header-content__image img {
+  width: 100%;
+}
+body .header-content__text {
+  width: 45%;
+}
+body .site-slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1rem;
+}
+body .site-slogan h1 {
+  font-family: "Popins", sans-serif;
+  color: #FFFFFF;
+  font-size: 7rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+body .site-slogan p {
+  font-family: "Popins", sans-serif;
+  color: #FFFFFF;
+  font-size: 3rem;
+  margin-top: 0;
+  transform: skew(10deg, -10deg);
+}
+body .social-icons {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+body .social-icons a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+body .social-icons img {
+  width: 50px;
+  height: auto;
+}
+body .text-welcome {
+  min-height: 100vh;
+  background: url("back-2.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+body .text-welcome .text-content {
+  font-family: "Popins", sans-serif;
+  color: #B2D234;
+  flex-basis: 50%;
+  padding-right: 20px;
+}
+body .text-welcome .text-content h2 {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1rem;
+}
+body .text-welcome .text-content p {
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+body .text-welcome .image-content {
+  flex-basis: 50%;
+  text-align: right;
+}
+body .text-welcome .image-content img {
+  max-width: 100%;
+  height: auto;
+}
+body .more-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #B2D234;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 2rem;
+}
+body .text-accroche {
+  min-height: 100vh;
+  background: url("back-3.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+}
+body .accroche-content {
+  background-color: rgba(178, 210, 52, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 50%;
+  margin-right: 5%;
+}
+body .accroche-content h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+  font-family: "Popins", sans-serif;
+}
+body .accroche-content p {
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+body .accroche-content .more-button2 {
+  padding: 0.5rem 3rem;
+  background-color: #FFFFFF;
+  color: #B2D234;
+  text-decoration: none;
+  border-radius: 1rem;
+  margin-top: auto;
+  align-self: center;
+}
+
+/*# sourceMappingURL=style.css.map */
