@@ -34,7 +34,7 @@ body {
   }
   header {
     min-height: 100vh;
-    background: url("back.png") no-repeat center center;
+    background: url("image/back.png") no-repeat center center;
     background-size: cover;
     
 
@@ -166,7 +166,7 @@ body {
 
 .text-welcome {
     min-height: 100vh; 
-    background: url("back-2.png") no-repeat center center;
+    background: url("image/back-2.png") no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center; 
@@ -220,7 +220,7 @@ body {
 }
 .text-accroche{
     min-height: 100vh; 
-    background: url("back-3.png") no-repeat center center;
+    background: url("image/back-3.png") no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center; 
@@ -265,4 +265,43 @@ body {
          
     }
     }
+}
+.menu{
+  min-height: 100vh; 
+    background: url("image/back-4.png") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    padding: 20px;
+    .menu-content{
+        padding: 2rem; 
+        border-radius: 8px;
+        max-width: 50%; 
+        margin-right: 5%;
+        h2 {
+          color: $color-green;
+          font-family: $font-heading;
+          font-size: 3rem;
+      
+      }
+
+      p {
+      color: $color-black;
+      font-size: 1rem;
+      margin-bottom: 1rem; 
+      
+     
+    }
+}
+.more-button3 {
+  display: inline-block; 
+  margin-top: 1rem; 
+  padding: 0.5rem 1rem; 
+  background-color: $color-green;
+  color: $color-white; 
+  text-decoration: none; 
+  border-radius: 2rem; 
+   
+}
 }

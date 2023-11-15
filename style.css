@@ -49,6 +49,8 @@ table {
   border-spacing: 0;
 }
 
+/* This file is intentionally left blank */
+/* This file is intentionally left blank */
 body {
   background-size: cover;
   margin: 0;
@@ -79,7 +81,7 @@ body {
 }
 body header {
   min-height: 100vh;
-  background: url("back.png") no-repeat center center;
+  background: url("image/back.png") no-repeat center center;
   background-size: cover;
 }
 body .header-navigation {
@@ -181,7 +183,7 @@ body .social-icons img {
 }
 body .text-welcome {
   min-height: 100vh;
-  background: url("back-2.png") no-repeat center center;
+  background: url("image/back-2.png") no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -226,7 +228,7 @@ body .more-button {
 }
 body .text-accroche {
   min-height: 100vh;
-  background: url("back-3.png") no-repeat center center;
+  background: url("image/back-3.png") no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -263,6 +265,41 @@ body .accroche-content .more-button2 {
   border-radius: 1rem;
   margin-top: auto;
   align-self: center;
+}
+
+.menu {
+  min-height: 100vh;
+  background: url("image/back-4.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.menu .menu-content {
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 50%;
+  margin-right: 5%;
+}
+.menu .menu-content h2 {
+  color: #B2D234;
+  font-family: "Popins", sans-serif;
+  font-size: 3rem;
+}
+.menu .menu-content p {
+  color: #000000;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.menu .more-button3 {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #B2D234;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
