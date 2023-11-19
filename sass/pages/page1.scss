@@ -1,0 +1,131 @@
+@use '../abstracts/variables' as *;
+@use '../base/typography' as *;
+
+body {
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-size: 1rem;
+}
+
+  header {
+    min-height: 100vh;
+    background: url("image/back.png") no-repeat center center;
+    background-size: cover;
+
+    .header-navigation {
+      display: flex;
+      padding: 47px 0 22px 0;
+      width: 80%;
+      margin: auto;
+      align-items: center;
+      font-size: 17px;
+      font-weight: 500;
+
+      &__logo {
+        flex: 1;
+
+        img {
+          width: 200px;
+        }
+      }
+
+      &__main-menu {
+        display: flex;
+        gap: 60px;
+        list-style: none;
+        flex: 2;
+        justify-content: center;
+
+        a {
+          color: $color-white;
+          text-decoration: none;
+          font-family: $font-heading;
+        }
+      }
+
+      .command-button {
+        padding: 0.5rem 2rem;
+        background-color: $color-white !important; 
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        color: $color-green !important;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: $font-heading;
+      }
+
+      .special {
+        border: 1px solid;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+
+      &__image {
+        width: 55%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &__text {
+        width: 45%;
+      }
+    }
+  }
+
+  .site-slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1rem;
+
+    h1 {
+      font-family: $font-heading; 
+      color: $color-white; 
+      font-size: 7rem; 
+      font-weight: bold;
+      margin-bottom: 0.5rem; 
+    }
+
+    p {
+      font-family: $font-heading; 
+      color: $color-white; 
+      font-size: 3rem;
+      margin-top: 0; 
+      transform: skew(10deg, -10deg);
+    }
+  }
+
+  .social-icons {
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px; 
+    display: flex;
+    gap: 10px; 
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-white; 
+      font-size: 2rem; 
+    }
+
+    img {
+      width: 50px; 
+      height: auto;
+    }
+  }
+

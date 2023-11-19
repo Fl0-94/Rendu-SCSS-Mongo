@@ -1,0 +1,111 @@
+@use '../abstracts/variables' as *;
+@use '../base/typography' as *;
+
+.content_page6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('image/back-9.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: $color-white;
+    padding: 20px;
+    height: 100vh;
+    &:last-child {
+        margin-top: 20px;
+    }
+
+    .content {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+
+        .image {
+            img {
+                width: 80%;
+                display: block;
+                margin-left: 15%;
+            }
+        }
+
+
+    }
+
+    .form-wrapper {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 5%;
+
+        .text-form {
+            margin-bottom: 20px;
+            text-align: center;
+
+            h2 {
+                color: $color-green;
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: $font_size-h2;
+            }
+
+            p {
+                margin-top: 0;
+                margin-bottom: 10px;
+                font-size: $font_size-p;
+                color: $color-black;
+            }
+        }
+
+        .form-container {
+            width: 100%;
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .row {
+                    display: flex;
+                    margin-bottom: 12px;
+
+                    .col {
+                        flex: 1;
+                        margin-right: 10px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 8px;
+                    color: $color-green;
+                    font-size: $font_size-label_text;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin-bottom: 12px;
+                }
+
+                button {
+                    width: 130px;
+                    height: 30px;
+                    background-color: $color-green;
+                    color: $color-white;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

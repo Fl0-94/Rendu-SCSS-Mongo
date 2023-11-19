@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as *;
+@use '../base/typography' as *;
+
+.content_page5 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    height: 100vh;
+    background: url('image/back-7.png') no-repeat center center fixed;
+    background-size: cover;
+
+    .green_column,
+    .blue_column {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between; 
+        margin: 10px;
+        padding: 20px;
+        width: 48%;
+        background-color: $color-green-transparent;
+
+        h2 {
+            font-size: $font_size-h2;
+            margin-bottom: 15px;
+            color: $color-white;
+        }
+
+        .green_left_sub_column,
+        .green_right_sub_column,
+        .blue_left_sub_column,
+        .blue_right_sub_column {
+            flex-basis: 50%; 
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        p {
+            color: $color-white;
+            margin: 5px 0;
+            font-size: $font_size-p;
+        }
+    }
+
+    .blue_column {
+        background-color: $color-blue-transparent;
+    }
+}

@@ -1,0 +1,99 @@
+@use '../abstracts/variables' as *;
+@use '../base/typography' as *;
+
+.container_page4 {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('image/back-8.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: $color-white;
+
+  .content {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+
+    .top-content {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-top: 20px;
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: $font_size-h2;
+        color: $color-green;
+      }
+
+      p {
+        font-size: $font_size-p;
+        color: $color-black;
+      }
+    }
+
+    .bottom-content {
+      display: flex;
+      justify-content: space-between;
+
+      .left-bottom {
+        flex: 1;
+        text-align: left;
+        margin-right: 20px;
+
+        h4 {
+          margin-bottom: 5px;
+          font-size: $font_size-h4;
+          color: $color-green;
+        }
+
+        p {
+          font-size: $font_size-p;
+          color: $color-black;
+        }
+      }
+
+      .right-bottom {
+        flex: 1;
+        text-align: right;
+
+        #green_force{
+          margin-bottom: 10px;
+          font-size: $font_size-green_force;
+          color: $color-green;
+        }
+
+        #blue_force{
+            margin-bottom: 10px;
+            font-size: $font_size-blue_force;
+            color: $color-blue;
+          }
+
+        p {
+          font-size: $font_size-p;
+          color: $color-black;
+        }
+
+        button {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: $color-green;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: $color-green-transparent;
+          }
+        }
+      }
+    }
+  }
+}
