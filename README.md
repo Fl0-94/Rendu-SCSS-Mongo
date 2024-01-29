@@ -1,3 +1,8 @@
+# Link project on vercel
+
+https://scss-update-mongo.vercel.app/
+
+
 # My Project
 
 This is a project that follows the 7-1 architecture pattern for SASS. The 7-1 pattern is a common structure for organizing SASS files in a project. It involves splitting up the SASS code into 7 different folders for a total of 7 categories, and then compiling it all into 1 output CSS file.
